@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(250, 240, 230);
+  transition: 0.5s ease-in;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 20px;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 18vh;
+  padding-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 60%;
+}
+ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  gap: 20%;
+}
+li {
+  padding: 10px;
+  font-size: large;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+li:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/* home */
+.home {
+  height: 100vh;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 19vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  color: rgb(255, 240, 245);
+  position: absolute;
+  left: 5%;
+  text-align: left;
+  width: 50%;
+}
+.welcome {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+/* about */
+#about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.first {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+}
+.second {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  margin-top: -15px;
+}
+.face {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.f4 {
+  display: flex;
+  justify-content: center;
+  padding-right: 10px;
+}
+.f5 {
+  width: 80%;
+}
+
+/* projects */
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 60vh;
+  width: 25%;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card img {
+  height: 35vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px 50px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 9px;
+}
+.pr-hero h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  /* margin-bottom: -10px; */
+}
+.card h4 {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+}
+.card p {
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  margin-top: -20px;
+  text-wrap: pretty;
+}
+
+/* contact */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+form,
+:placeholder-shown {
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form-div {
+  padding: 15px;
+}
+input {
+  width: 30em;
+  height: 2em;
+}
+#message {
+  width: 30em;
+  height: 10em;
+}
+#form-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#submit {
+  height: 2em;
+  margin: 15px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+#contact p {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+/* footer */
+footer {
+  background-color: rgb(105, 105, 105);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+}
+.footer-class {
+  width: 80%;
+  text-align: center;
+}
+footer p {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 10px 0px 0px 10px;
+}
+.icons img {
+  height: 2.5em;
+  padding: 2px;
+}
+.footer-copy {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  p,
+  a {
+    font-size: 15px;
+  }
+  nav {
+    justify-content: start;
+  }
+  nav img {
+    display: none;
+  }
+  .list {
+    padding: 5px;
+  }
+  ul {
+    gap: 3px;
+  }
+
+  .text {
+    width: 80%;
+    left: 10%;
+    top: 20%;
+    text-wrap: pretty;
+  }
+  .welcome {
+    font-size: 40px;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    text-wrap: pretty;
+  }
+  .face {
+    height: 200px;
+    width: 200px;
+  }
+
+  .card-container {
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 5em;
+  }
+  .card {
+    width: 18em;
+    height: auto;
+  }
+  form {
+    height: auto;
+    width: 80%;
+  }
+  input,
+  #message {
+    width: 90%;
+  }
+  footer {
+    margin-top: 5em;
+  }
+}
