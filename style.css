@@ -254,8 +254,8 @@ footer p {
 
 @media only screen and (max-width: 768px) {
   body {
-    /* margin: 5px;
-    padding: 5px; */
+    margin: 1px;
+    padding: 1px;
   }
   header{
     height: 10vh;
@@ -271,7 +271,7 @@ footer p {
     padding: 5px;
   }
   ul {
-    gap: 5px;
+    gap: 3px;
   }
 
   .text {
